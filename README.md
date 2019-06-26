@@ -1,2 +1,2 @@
-# Visualising-the-Earth-as-a-Rotating-Frame
-A suite of Imperial Visualisations demonstrating mechanics of rotating frame using the Earth as an example.
+# Understanding-Non-Inertial-Frames
+A suite of Imperial Visualisations demonstrating mechanics of non-inertial frames - particularly rotating frames, finishing by using the Earth as an example.
