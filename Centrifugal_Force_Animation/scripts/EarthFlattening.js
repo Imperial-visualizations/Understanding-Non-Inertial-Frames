@@ -62,7 +62,7 @@ function draw() {
     if (show) {
         noFill()
         stroke(225);
-        sphere(radius)
+        sphere(0.85*radius)
     }
     fill(173, 25, 96);
     texture(img)
