@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rotating Frames</title>
+    <link rel="stylesheet" href="Style3.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://www.numericjs.com/lib/numeric-1.2.6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.15.0/math.min.js"></script>
+    <script src="http://api.mathjs.org"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Graph -->
+            <div class="six columns">
+                <div class = "six columns" id="rotfrm"></div>
+                <div class = "six columns" id='rotrotfrm'></div>
+            </div>
+
+
+            <div class = "six columns" id = "right">
+            <h1>Rotating Frames</h1>
+            <p>This visualisation offers an overview of the behaviour of particles in rotating frames of reference, as presented in the year 1 Physics mechanics course.</p>
+            <p>Central to our understanding of rotating frames is idea that if a body rotates in the "lab frame", the rotating frame is the one in which the body is stationary.
+            This is illustrated in the graphics to the left - the leftmost image shows the Earth's rotation in the "lab frame", and the one on the right shows how, in the Earth
+            frame, the sun appears to rotate about the Earth.</p>
+            <p>Mathematically, it is useful to consider $\mathbf{r}$, the vector distance from the centre of the rotating body (the origin of the rotating frame).
+            We also define a vector $\mathbf{\omega}$ to have the magnitude of the rotation rate (in radians per second) and the direction determined by applying the right hand rule to
+            the rotation. We can now describe the graphics to the left mathematically: any point that is stationary in the rotating frame moves with a tangential speed of
+            $\mathbf{v}=\mathbf{\omega}\times\mathbf{r}$. This term forms the basis of the derivation shown in the next slide.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script language = 'javascript' type = 'text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script>
+    <script src=RotatingFrames.js></script>
+
+</body>
+
+</html>
