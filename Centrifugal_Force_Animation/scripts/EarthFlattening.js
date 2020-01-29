@@ -6,7 +6,8 @@ const radius = 160;
 let width = $("#spin").width(), height = 0.6 * $(window).height(); //Set's width to be equal to the div with id spin in the HTML page, ensures it has full width
 
 function preload() {
-    img = loadImage("assets/Earth.png");
+    imgSrc = document.querySelector("#earthimg").getAttribute("src");
+    img = loadImage(imgSrc);
 }
 
 function setup() {
@@ -79,3 +80,4 @@ function draw() {
     ellipsoid(a, 0.85*radius*flatteningFactor, a, 128);
 
 }
+let pages = ["1Derivation.html", "1Euler Force.html", "1Centrifugal Force.html"]
