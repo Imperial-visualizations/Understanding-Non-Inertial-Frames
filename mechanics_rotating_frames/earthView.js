@@ -17,7 +17,7 @@ let derShow = false;
 
 let earthview = function(p) {
     p.preload = function() {
-        img = p.loadImage("Earth_smaller.png");
+        img = p.loadImage("assets/Earth_smaller.png");
     }
 
     p.setup = function() {

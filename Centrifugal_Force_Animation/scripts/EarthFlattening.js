@@ -6,7 +6,7 @@ const radius = 160;
 let width = $("#spin").width(), height = 0.6 * $(window).height(); //Set's width to be equal to the div with id spin in the HTML page, ensures it has full width
 
 function preload() {
-    img = loadImage("../assets/Earth.png");
+    img = loadImage("assets/Earth.png");
 }
 
 function setup() {
@@ -36,7 +36,7 @@ function setup() {
     }
     });
 
-    slider = createSlider(0, 1, 0.025, 0);
+    slider = createSlider(0, 0.8, 0.025, 0);
     slider.position(25, 0)
     slider.parent(animation)
     slider.style('width', '150px');
@@ -54,7 +54,7 @@ function draw() {
     omega = slider.value()
     let flatteningFactor = 1 - omega * omega;
     // Mathematical expression for two semi-major axes of the oblate spheroid
-    let a = Math.sqrt(radius * radius / flatteningFactor);
+    let a = 0.85*Math.sqrt(radius * radius / flatteningFactor);
     background(25);
 
     rotateY((2*omega)*millis()/1000);
@@ -76,6 +76,6 @@ function draw() {
     pointLight(255, 255, 255, locX, locY, 500)
     pointLight(255, 255, 255, locX, locY, 500)
 
-    ellipsoid(a, radius*flatteningFactor, a, 128);
+    ellipsoid(a, 0.85*radius*flatteningFactor, a, 128);
 
 }

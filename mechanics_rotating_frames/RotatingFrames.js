@@ -11,7 +11,7 @@ let vecShow = false;
 
 earthframe = function (p) {
     p.preload = function() {
-        img = p.loadImage("Earth_smaller.png");
+        img = p.loadImage("../assets/Earth_smaller.png");
     }
 
     p.setup = function() {
