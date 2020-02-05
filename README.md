@@ -1,2 +1,5 @@
-# Understanding-Non-Inertial-Frames
-A suite of Imperial Visualisations demonstrating mechanics of non-inertial frames - particularly rotating frames, finishing by using the Earth as an example.
+Author: Dong-Woo (Dom) Ko 
+Email: dk1713@ic.ac.uk
+Created: Summer 2017 (UROP)
+For: Dr. Marina Galand - Vector Calculus (Physics Department)
+Completion: Completed
